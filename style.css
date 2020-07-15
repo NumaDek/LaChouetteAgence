@@ -825,6 +825,20 @@ h4 {
     background-image: url("img/image-de-presentation.jpg");
 }
 
+.annonce {
+    font-size: 1.6em;
+    max-width: 600px;
+    margin: auto;
+}
+
+.annonce--citation {
+    font-style: italic;
+}
+
+.center-me {
+    margin: auto;
+}
+
 @media (max-width: 1024px) {
     .bloc {
         padding-left: 20px;
