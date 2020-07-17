@@ -1,0 +1,18 @@
+# Groupe 1
+User-agent: *
+Disallow: /vs/
+Disallow: /css/
+Disallow: /fonts/
+Disallow: /img/
+Disallow: /includes/
+Disallow: /js/
+Disallow: .gitignore
+Disallow: README.md
+
+# Groupe 2
+User-agent: *
+Allow: index.html
+Allow: contact.html
+
+
+Sitemap: https://numadek.github.io/LaChouetteAgence/sitemap.xml
