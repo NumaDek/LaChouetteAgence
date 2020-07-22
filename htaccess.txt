@@ -1,0 +1,26 @@
+# BEGIN Cache-Control Headers
+<IfModule mod_headers.c>
+<FilesMatch "img/(jpg|png)$">
+Header set Cache-Control "max-age=2592000, public"
+</FilesMatch>
+<FilesMatch "js/(js)$">
+Header set Cache-Control "max-age=2592000, private"
+</FilesMatch>
+<FilesMatch "css/(css)$">
+Header set Cache-Control "max-age=2592000, private"
+</FilesMatch>
+<filesMatch "/(html)$">
+Header set Cache-Control "max-age=2592000, public"
+</filesMatch>
+</IfModule>
+# END Cache-Control Headers
+
+# BEGIN Expires Headers
+<IfModule mod_expires.c>
+ExpiresActive On
+ExpiresByType img/jpg "access plus 1 year"
+ExpiresByType img/png "access plus 1 year"
+ExpiresByType js/js "access plus 1 month"
+ExpiresDefault "access plus 2 days"
+</IfModule>
+# END Expires Headers
