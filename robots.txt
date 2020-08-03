@@ -3,7 +3,6 @@ User-agent: *
 Disallow: /vs/
 Disallow: /css/
 Disallow: /fonts/
-Disallow: /img/
 Disallow: /includes/
 Disallow: /js/
 Disallow: .gitignore
